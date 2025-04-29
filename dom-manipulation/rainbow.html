@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+        <style>
+            .container {
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+            }
+
+            .rainbow {
+                width: 80px;
+                height: 80px;
+                float: left;
+                margin-right: 10px;
+            }
+
+            .violet {
+                background-color: violet;
+            }
+            .indigo {
+                background-color: indigo;
+            }
+            .blue {
+                background-color: blue;
+            }
+            .green {
+                background-color: green;
+            }
+            .yellow {
+                background-color: yellow;
+            }
+            .orange {
+                background-color: orange;
+            }
+            .red {
+                background-color: red;
+            }
+
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Rainbow Colors</h2>
+        <div class="rainbow violet"></div>
+        <div class="rainbow indigo"></div>
+        <div class="rainbow blue"></div>
+        <div class="rainbow green"></div>
+        <div class="rainbow yellow"></div>
+        <div class="rainbow orange"></div>
+        <div class="rainbow red"></div>
+</body>
+<script>
+    var violet = document.querySelector('.violet');
+    var indigo = document.querySelector('.indigo');
+    var blue = document.querySelector('.blue');
+    var green = document.querySelector('.green');
+    var yellow = document.querySelector('.yellow');
+    var orange = document.querySelector('.orange');
+    var red = document.querySelector('.red');
+
+    <!-- console.log(violet); -->
+
+    console.log(window.getComputedStyle(violet).background);
+</script>
+</html>
